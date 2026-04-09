@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "http://lokalwebsolutions.de/:path*",
-      "destination": "https://lokalwebsolutions.de/:path*",
-      "permanent": true
-    }
-  ]
-}
