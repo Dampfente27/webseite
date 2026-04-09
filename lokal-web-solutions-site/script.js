@@ -1,16 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  if (!form) return;
 
-    const data = new FormData(form);
-
-    await fetch("/", {
-      method: "POST",
-      body: data
-    });
-
-    window.location.href = "/danke/";
+  form.addEventListener('submit', () => {
+    if (status) {
+      status.textContent = 'Ihre Anfrage wird gesendet …';
+      status.style.color = '#1565d8';
+    }
   });
 });
