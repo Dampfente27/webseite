@@ -149,13 +149,47 @@
           </ul>
         </div>
         <form
-          class="contact-form card"
-          id="contactForm"
-          name="kontakt"
-          method="POST"
-          data-netlify="true"
+            class="contact-form card"
+            id="contactForm"
+            method="POST"
+            action="https://formspree.io/f/xzdkqona"
+          >
+            <!-- WICHTIG: Redirect nach dem Absenden -->
+            <input type="hidden" name="_redirect" value="https://lokalwebsolutions.de/danke/">
           
-        >
+            <div class="form-grid">
+              <label class="hover-soft">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Ihr Name" required>
+              </label>
+          
+              <label class="hover-soft">
+                <span>E-Mail</span>
+                <input type="email" name="email" placeholder="ihre@email.de" required>
+              </label>
+            </div>
+          
+            <label class="hover-soft">
+              <span>Telefonnummer (optional)</span>
+              <input type="tel" name="phone" placeholder="Ihre Telefonnummer">
+            </label>
+          
+            <label class="hover-soft">
+              <span>Worum geht es?</span>
+              <textarea name="message" rows="6" placeholder="Beschreiben Sie kurz Ihr Unternehmen und Ihren Bedarf." required></textarea>
+            </label>
+          
+            <label class="checkbox hover-soft">
+              <input type="checkbox" name="privacy" required>
+              <span>
+                Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme
+                der Verarbeitung meiner Daten zu.
+              </span>
+            </label>
+          
+            <button class="btn btn-primary hover-up" type="submit">Anfrage senden</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
           <input type="hidden" name="form-name" value="kontakt">
 
           <p class="hidden-field">
