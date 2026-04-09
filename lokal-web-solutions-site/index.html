@@ -149,14 +149,11 @@
             <li>Klare nächste Schritte ohne unnötige Komplexität</li>
           </ul>
         </div>
-        <form
-            class="contact-form card"
-            id="contactForm"
-            method="POST"
-            action="https://formspree.io/f/xzdkqona"
-          >
+        <form id="contactForm" 
+              class="contact-form card"
+              method="POST"
+              action="https://formspree.io/f/xzdkqona">
             <!-- WICHTIG: Redirect nach dem Absenden -->
-            <input type="hidden" name="_next" value="https://lokalwebsolutions.de/danke.html">
           
             <div class="form-grid">
               <label class="hover-soft">
@@ -209,5 +206,27 @@
   </footer>
 
   <script src="script.js"></script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    window.location.href = "/danke.html";
+  } else {
+    alert("Fehler beim Senden");
+  }
+});
+</script>  
 </body>
 </html>
