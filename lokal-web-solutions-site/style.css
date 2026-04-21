@@ -348,3 +348,42 @@ p { margin: 0 0 16px; }
   .btn { width: 100%; }
   .nav-wrap { min-height: 72px; }
 }
+
+:root {
+  --bg: #0b0f14;
+  --bg-alt: #11161c;
+  --card: #161b22;
+  --border: #262c36;
+  --text: #e6edf3;
+  --text-muted: #9da7b3;
+  --primary: #2563eb;
+}
+
+body {
+  background: radial-gradient(circle at top, #111827, #020617);
+  color: var(--text);
+}
+
+.card {
+  background: rgba(22, 27, 34, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-radius: 8px;
+}
+
+input, textarea {
+  background: #0f141a;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
