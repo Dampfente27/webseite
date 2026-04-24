@@ -808,18 +808,36 @@
       h1 {
         font-size: 44px;
       }
+      .logo {
+        height: 42px;
+        width: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.6));
+      }
+      
+      .brand-text {
+        font-weight: 900;
+        letter-spacing: -0.03em;
+        font-size: 16px;
+      }
+      .logo:hover {
+        filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.9));
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header class="site-header">
+ <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Lokal Web Solutions Startseite">
-        <span class="brand-mark"></span>
-        <span>Lokal Web Solutions</span>
+  
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Lokal Web Solutions Logo" class="logo">
+        <span class="brand-text">Lokal Web Solutions</span>
       </a>
-
+  
       <nav class="nav">
         <a href="#leistungen">Leistungen</a>
         <a href="#vorteile">Vorteile</a>
@@ -828,8 +846,9 @@
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
       </nav>
-
+  
       <a class="btn btn-small btn-primary" href="#kontakt">Angebot anfordern</a>
+  
     </div>
   </header>
 
