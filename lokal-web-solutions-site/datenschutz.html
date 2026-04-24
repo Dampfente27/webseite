@@ -1,66 +1,123 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz – Lokal Web Solutions</title>
-  <meta name="description" content="Datenschutzerklärung von Lokal Web Solutions.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Datenschutz – Lokal Web Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+  font-family: Inter;
+  background:#050816;
+  color:#fff;
+  margin:0;
+}
+
+.container{
+  width:min(900px,90%);
+  margin:auto;
+  padding:80px 0;
+}
+
+.card{
+  background:rgba(20,25,45,0.7);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:20px;
+  padding:30px;
+  backdrop-filter:blur(20px);
+}
+
+h1{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+h2{
+  margin-top:30px;
+}
+
+a{
+  color:#22d3ee;
+}
+
+.header{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(5,8,22,0.7);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+}
+
+.btn{
+  background:linear-gradient(135deg,#7c3aed,#2563eb);
+  padding:10px 15px;
+  border-radius:20px;
+}
+</style>
 </head>
-<body class="legal-page">
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Lokal Web Solutions</a>
-      <a class="btn btn-small btn-primary" href="index.html#kontakt">Angebot anfordern</a>
-    </div>
-  </header>
 
-  <main class="legal-main">
-    <div class="container">
-      <a class="back-link" href="index.html">← Zurück zur Startseite</a>
-      <h1>Datenschutzerklärung</h1>
+<body>
 
-      <h2>1. Allgemeine Hinweise</h2>
-      <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung informiert darüber, welche personenbezogenen Daten beim Besuch dieser Website verarbeitet werden.</p>
+<header class="header">
+  <div class="nav">
+    <strong>Lokal Web Solutions</strong>
+    <a href="index.html" class="btn">Zurück</a>
+  </div>
+</header>
 
-      <h2>2. Verantwortliche Stelle</h2>
-      <p>
-        Max Mustermann<br>
-        Lokal Web Solutions<br>
-        [Straße und Hausnummer als Platzhalter ergänzen]<br>
-        [PLZ Ort als Platzhalter ergänzen]<br>
-        E-Mail: kontakt@lokalwebsolutions.de
-      </p>
+<div class="container">
 
-      <h2>3. Erhebung und Verarbeitung personenbezogener Daten</h2>
-      <p>Personenbezogene Daten werden nur verarbeitet, wenn Sie uns diese freiwillig mitteilen, zum Beispiel über das Kontaktformular oder per E-Mail.</p>
+  <div class="card">
+    <h1>Datenschutzerklärung</h1>
 
-      <h2>4. Kontaktformular</h2>
-      <p>Wenn Sie uns über das Kontaktformular eine Anfrage senden, werden die von Ihnen eingegebenen Daten zur Bearbeitung Ihrer Anfrage verarbeitet. Dies betrifft insbesondere Name, E-Mail-Adresse, Telefonnummer (optional) und den Inhalt Ihrer Nachricht.</p>
-      <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. a DSGVO, sofern eine Einwilligung abgefragt wurde.</p>
+    <h2>1. Allgemeine Hinweise</h2>
+    <p>
+      Der Schutz Ihrer persönlichen Daten ist uns wichtig.
+      Wir behandeln Ihre personenbezogenen Daten vertraulich
+      und entsprechend der gesetzlichen Datenschutzvorschriften.
+    </p>
 
-      <h2>5. Speicherdauer</h2>
-      <p>Ihre Daten werden nur so lange gespeichert, wie dies zur Bearbeitung Ihrer Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.</p>
+    <h2>2. Datenerfassung auf dieser Website</h2>
+    <p>
+      Die Daten werden erhoben, wenn Sie uns diese über das
+      Kontaktformular mitteilen.
+    </p>
 
-      <h2>6. Ihre Rechte</h2>
-      <ul>
-        <li>Recht auf Auskunft über Ihre gespeicherten Daten</li>
-        <li>Recht auf Berichtigung unrichtiger Daten</li>
-        <li>Recht auf Löschung Ihrer Daten</li>
-        <li>Recht auf Einschränkung der Verarbeitung</li>
-        <li>Recht auf Widerspruch gegen die Verarbeitung</li>
-        <li>Recht auf Datenübertragbarkeit</li>
-      </ul>
+    <h2>3. Kontaktformular</h2>
+    <p>
+      Wenn Sie uns per Formular Anfragen zukommen lassen,
+      werden Ihre Angaben zwecks Bearbeitung der Anfrage
+      gespeichert.
+    </p>
 
-      <h2>7. Hosting und Server-Logfiles</h2>
-      <p>Beim Aufruf dieser Website können durch den Hosting-Anbieter automatisch technische Daten in sogenannten Server-Logfiles gespeichert werden. Dies betrifft z. B. Browsertyp, Betriebssystem, Uhrzeit des Zugriffs und IP-Adresse. Diese Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <h2>4. Nutzung von Formspree</h2>
+    <p>
+      Diese Website nutzt den Dienst Formspree zum Versand
+      von Formularen. Anbieter ist Formspree Inc., USA.
+    </p>
 
-      <h2>8. Hinweis</h2>
-      <p>Diese Datenschutzerklärung ist eine allgemeine Vorlage und ersetzt keine individuelle rechtliche Prüfung. Vor der finalen Veröffentlichung sollten die tatsächlichen Daten, der Hosting-Anbieter und die konkret eingesetzten Dienste geprüft und ergänzt werden.</p>
-    </div>
-  </main>
+    <h2>5. Ihre Rechte</h2>
+    <p>
+      Sie haben jederzeit das Recht auf Auskunft, Löschung
+      oder Berichtigung Ihrer gespeicherten Daten.
+    </p>
+
+    <h2>6. Kontakt</h2>
+    <p>
+      kontakt@lokalwebsolutions.de
+    </p>
+  </div>
+
+</div>
 </body>
 </html>
