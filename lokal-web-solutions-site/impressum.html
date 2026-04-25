@@ -10,7 +10,7 @@
 
 <style>
 body{
-  font-family: Inter;
+  font-family: Inter, system-ui;
   background:#050816;
   color:#fff;
   margin:0;
@@ -19,24 +19,30 @@ body{
 .container{
   width:min(900px,90%);
   margin:auto;
-  padding:80px 0;
+  padding:100px 0 60px;
 }
 
 .card{
   background:rgba(20,25,45,0.7);
   border:1px solid rgba(255,255,255,0.1);
   border-radius:20px;
-  padding:30px;
+  padding:32px;
   backdrop-filter:blur(20px);
 }
 
 h1{
-  font-size:40px;
+  font-size:36px;
   margin-bottom:20px;
 }
 
 h2{
   margin-top:30px;
+  margin-bottom:10px;
+}
+
+p{
+  color:#cbd5e1;
+  line-height:1.7;
 }
 
 a{
@@ -62,6 +68,8 @@ a{
   background:linear-gradient(135deg,#7c3aed,#2563eb);
   padding:10px 15px;
   border-radius:20px;
+  color:white;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -76,40 +84,60 @@ a{
 </header>
 
 <div class="container">
-
   <div class="card">
+
     <h1>Impressum</h1>
 
-    <p><strong>Lokal Web Solutions</strong></p>
-    <p>Gabriel Umkehr</p>
-    <p>Bad Kissingen, Deutschland</p>
+    <p><strong>Angaben gemäß § 5 TMG</strong></p>
+
+    <p>
+      Lokal Web Solutions<br>
+      Gabriel Umkehr<br>
+      Bad Kissingen<br>
+      Deutschland
+    </p>
+
+    <!-- ⚠️ HIER ERGÄNZEN -->
+    <!-- Straße + Hausnummer + PLZ unbedingt eintragen -->
+    <!-- Beispiel:
+    Musterstraße 1
+    97688 Bad Kissingen
+    -->
 
     <h2>Kontakt</h2>
-    <p>E-Mail: kontakt@lokalwebsolutions.de</p>
+    <p>
+      E-Mail: kontakt@lokalwebsolutions.de
+    </p>
 
-    <h2>Verantwortlich für Inhalte</h2>
-    <p>Gabriel Umkehr gemäß § 55 Abs. 2 RStV</p>
+    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+    <p>
+      Gabriel Umkehr<br>
+      Bad Kissingen<br>
+      Deutschland
+    </p>
 
     <h2>Haftung für Inhalte</h2>
     <p>
-      Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
-      Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
-      können wir jedoch keine Gewähr übernehmen.
+      Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+      Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen
+      zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
     </p>
 
     <h2>Haftung für Links</h2>
     <p>
-      Unsere Website enthält Links zu externen Websites Dritter,
-      auf deren Inhalte wir keinen Einfluss haben.
+      Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+      Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
     </p>
 
     <h2>Urheberrecht</h2>
     <p>
-      Die durch die Seitenbetreiber erstellten Inhalte und Werke
-      unterliegen dem deutschen Urheberrecht.
+      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+      Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
+      bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
     </p>
-  </div>
 
+  </div>
 </div>
+
 </body>
 </html>
