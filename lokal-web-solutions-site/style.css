@@ -825,4 +825,20 @@
       letter-spacing: -0.03em;
       color: white;
     }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
     
+      backdrop-filter: blur(16px);
+      background: rgba(5, 8, 22, 0.75);
+    
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    
+    .nav-wrap {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
