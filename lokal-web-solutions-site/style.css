@@ -601,6 +601,46 @@
     .comparison-card h3 {
       margin-bottom: 16px;
     }
+    /* ❌ Linke Seite */
+    .comparison-card.bad {
+      opacity: 0.85;
+      border-color: rgba(239,68,68,0.2);
+    }
+    
+    /* Beim Hover stärker */
+    .comparison-card.bad:hover {
+      border-color: rgba(239,68,68,0.5);
+      box-shadow: 0 0 30px rgba(239,68,68,0.15);
+    }
+    
+    /* ✅ Rechte Seite */
+    .comparison-card.good:hover {
+      border-color: rgba(34,197,94,0.5);
+      box-shadow: 0 0 40px rgba(34,197,94,0.2);
+    }
+    
+
+    /* Hover Animation (Premium Effekt) */
+    .comparison-card {
+      transition: all 0.3s ease;
+    }
+    
+    .comparison-card:hover {
+      transform: translateY(-6px);
+    }
+    /* ❌ rot Kreuz */
+    .comparison-card.bad .mini-list li::before {
+      content: "✕";
+      background: rgba(239,68,68,0.15);
+      color: #ef4444;
+    }
+    
+    /* ✅ grüner Haken */
+    .comparison-card.good .mini-list li::before {
+      content: "✓";
+      background: rgba(34,197,94,0.15);
+      color: var(--green);
+    }
 
     .grid {
       display: grid;
