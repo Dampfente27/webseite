@@ -69,18 +69,18 @@
       position: sticky;
       top: 0;
       z-index: 100;
-    
-      backdrop-filter: blur(16px);
-      background: rgba(5, 8, 22, 0.75);
-    
+      backdrop-filter: blur(22px);
+      background: rgba(5, 8, 22, 0.68);
       border-bottom: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.22);
     }
     
     .nav-wrap {
-      min-height: 80px;
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 24px;
     }
 
     .brand {
@@ -139,18 +139,32 @@
       min-height: 48px;
     }
 
-    .btn-primary {
+   .btn-primary {
+      position: relative;
+      overflow: hidden;
       background: linear-gradient(135deg, var(--primary), var(--primary-2));
       color: white;
-      border-color: rgba(255,255,255,0.14);
-      box-shadow: 0 0 34px rgba(124, 58, 237, 0.38);
+      border-color: rgba(255,255,255,0.16);
+      box-shadow: 0 0 34px rgba(124, 58, 237, 0.45);
     }
-
+    
+    .btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.32), transparent);
+      transform: translateX(-110%);
+      transition: 0.6s ease;
+    }
+    
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 46px rgba(124, 58, 237, 0.58);
+      box-shadow: 0 0 52px rgba(124, 58, 237, 0.68);
     }
-
+    
+    .btn-primary:hover::after {
+      transform: translateX(110%);
+    }
     .btn-secondary {
       background: rgba(255,255,255,0.06);
       color: var(--text);
@@ -172,6 +186,18 @@
       min-height: calc(100vh - 76px);
       display: flex;
       align-items: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(124,58,237,0.25), transparent 70%);
+      top: -100px;
+      right: -100px;
+      filter: blur(80px);
+      z-index: -1;
     }
 
     .hero-grid {
@@ -441,11 +467,12 @@
 
     .bento-card:hover,
     .card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-8px) scale(1.015);
       border-color: var(--border-strong);
-      box-shadow: 0 24px 90px rgba(0,0,0,0.42), 0 0 42px rgba(124,58,237,0.12);
+      box-shadow:
+        0 30px 110px rgba(0,0,0,0.55),
+        0 0 55px rgba(124,58,237,0.16);
     }
-
     .bento-card > *,
     .card > * {
       position: relative;
@@ -796,35 +823,52 @@
       h1 {
         font-size: 44px;
       }
+      .logo {
+       height: 38px;
+      }
+    
+      .brand-text {
+        font-size: 15px;
+      }
+    
+      .nav-wrap {
+        min-height: 72px;
+      }
+    
+      .btn-small {
+       padding: 10px 15px;
+       font-size: 13px;
+      }
     }
     .logo {
-      height: 52px;              /* ← PERFEKTE Größe */
+      height: 44px;
       width: auto;
       object-fit: contain;
       display: block;
-    
-      /* Glow Effekt */
-      filter: drop-shadow(0 0 8px rgba(124,58,237,0.4));
-    
-      /* weicher Look */
-      border-radius: 10px;
+      border-radius: 0;
+      background: transparent;
+      filter: drop-shadow(0 0 10px rgba(124,58,237,0.45));
+      transition: 0.3s ease;
     }
     
-    /* Hover = Premium Effekt */
     .logo:hover {
-      filter: drop-shadow(0 0 18px rgba(124,58,237,0.8));
+      filter: drop-shadow(0 0 22px rgba(124,58,237,0.8));
+      transform: scale(1.04);
     }
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
     }
     
     .brand-text {
-      font-weight: 800;
+      font-weight: 850;
       font-size: 16px;
       letter-spacing: -0.03em;
-      color: white;
+      color: var(--text);
+      line-height: 1.1;
     }
-
 
