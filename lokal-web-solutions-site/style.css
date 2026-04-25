@@ -35,6 +35,9 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
+    html, body {
+        overflow-x: hidden;    
+    }
 
     body::before {
       content: "";
