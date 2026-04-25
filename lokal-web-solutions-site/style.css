@@ -795,22 +795,34 @@
       h1 {
         font-size: 44px;
       }
-   
-      
-      .brand-text {
-        font-weight: 900;
-        letter-spacing: -0.03em;
-        font-size: 16px;
-      }   
     }
     .logo {
-      height: 42px;
+      height: 52px;              /* ← PERFEKTE Größe */
       width: auto;
       object-fit: contain;
+      display: block;
+    
+      /* Glow Effekt */
+      filter: drop-shadow(0 0 8px rgba(124,58,237,0.4));
+    
+      /* weicher Look */
+      border-radius: 10px;
     }
     
-     /* optional Premium Glow */
+    /* Hover = Premium Effekt */
     .logo:hover {
-      filter: drop-shadow(0 0 12px rgba(124,58,237,0.6));
+      filter: drop-shadow(0 0 18px rgba(124,58,237,0.8));
     }
- 
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    
+    .brand-text {
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -0.03em;
+      color: white;
+    }
+    
