@@ -68,18 +68,19 @@
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(5, 8, 22, 0.72);
-      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    
+      backdrop-filter: blur(16px);
+      background: rgba(5, 8, 22, 0.75);
+    
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-
+    
     .nav-wrap {
-      min-height: 76px;
+      min-height: 80px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
     }
 
     .brand {
@@ -825,20 +826,5 @@
       letter-spacing: -0.03em;
       color: white;
     }
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    
-      backdrop-filter: blur(16px);
-      background: rgba(5, 8, 22, 0.75);
-    
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    
-    .nav-wrap {
-      min-height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+
+
